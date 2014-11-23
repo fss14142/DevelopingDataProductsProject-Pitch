@@ -8,7 +8,7 @@ framework   : io2012
 highlighter : highlight.js  
 hitheme     : tomorrow       
 url:
-    lib: ../../librariesNew #Remove new if using old slidify
+    lib: ../../libraries #Remove new if using old slidify
     assets: ../../assets
 widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
@@ -47,7 +47,7 @@ For further details on the eBird API check  [https://confluence.cornell.edu/disp
 
 ## Showing the data for a state in a map.
 
-I have used Leaflet (via RChart) to plot the resulting data in an interactive map. For example, let me use Snow geese observations for the last week in the State of Arkansas, at the time when this slidify document was last compiled (2014-11-23 17:50:34 CET). In the map included in this slide you can zoom in /out, pan or click any of the popups to see the associated information for that observation (site name, coordinates, number of birds, date). 
+I have used Leaflet (via RChart) to plot the resulting data in an interactive map. For example, let me use Snow geese observations for the last week in the State of Arkansas, at the time when this slidify document was last compiled (2014-11-23 18:04:50 CET). In the map included in this slide you can zoom in /out, pan or click any of the popups to see the associated information for that observation (site name, coordinates, number of birds, date). 
 
 The original application uses the interactivity provided by Shiny to give the user the choice of state, bird species and the number of days to display in the map (in this online Slidify presentation that functionality is not included). 
 
