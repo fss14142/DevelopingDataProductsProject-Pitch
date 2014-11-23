@@ -1,0 +1,141 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css'>
+    
+    <script src='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js' type='text/javascript'></script>
+    <script src='https://rawgithub.com/leaflet-extras/leaflet-providers/gh-pages/leaflet-providers.js' type='text/javascript'></script>
+    <script src='http://harrywood.co.uk/maps/examples/leaflet/leaflet-plugins/layer/vector/KML.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 600px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chartd146db3248' class = 'rChart leaflet'></div>    
+    <script>
+  var spec = {
+ "dom": "chartd146db3248",
+"width":            600,
+"height":            400,
+"urlTemplate": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+"layerOpts": {
+ "attribution": "Map data<a href=\"http://openstreetmap.org\">OpenStreetMap</a>\n         contributors, Imagery<a href=\"http://mapbox.com\">MapBox</a>" 
+},
+"center": [        34.9513,       -92.3809 ],
+"zoom":              7,
+"id": "chartd146db3248" 
+}
+
+  var map = L.map(spec.dom, spec.mapOpts)
+  
+    map.setView(spec.center, spec.zoom);
+
+    if (spec.provider){
+      L.tileLayer.provider(spec.provider).addTo(map)    
+    } else {
+		  L.tileLayer(spec.urlTemplate, spec.layerOpts).addTo(map)
+    }
+     
+    L
+  .marker([
+ 35.669,
+-90.786 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Senteney Rd. (Poinsett Co.)<br>Coordinates (lat, long): 35.67,-90.79</br>N. of birds: 30000</br>Date: 2014-11-22 14:04</p>")
+L
+  .marker([
+ 34.554,
+-92.615 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Cherry Gingles/Saline River at Benton/Sunset Lake<br>Coordinates (lat, long): 34.55,-92.62</br>N. of birds: 300</br>Date: 2014-11-22 06:30</p>")
+L
+  .marker([
+ 34.984,
+-90.953 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: I 40<br>Coordinates (lat, long): 34.98,-90.95</br>N. of birds: 350</br>Date: 2014-11-21 11:00</p>")
+L
+  .marker([
+ 35.137,
+-92.446 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Beaverfork Lake<br>Coordinates (lat, long): 35.14,-92.45</br>N. of birds: 1</br>Date: 2014-11-21 10:00</p>")
+L
+  .marker([
+ 35.342,
+-90.225 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Wapanocca NWR<br>Coordinates (lat, long): 35.34,-90.23</br>N. of birds: 5000</br>Date: 2014-11-20 11:07</p>")
+L
+  .marker([
+ 35.779,
+-90.709 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Craighead Forest Park<br>Coordinates (lat, long): 35.78,-90.71</br>N. of birds: 25</br>Date: 2014-11-20 09:00</p>")
+L
+  .marker([
+  35.25,
+-91.583 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Bald Knob NWR<br>Coordinates (lat, long): 35.25,-91.58</br>N. of birds: 13</br>Date: 2014-11-19 13:12</p>")
+L
+  .marker([
+ 36.244,
+-93.137 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Baker Prairie Natural Area<br>Coordinates (lat, long): 36.24,-93.14</br>N. of birds: 45</br>Date: 2014-11-17 10:20</p>")
+L
+  .marker([
+ 35.719,
+-90.714 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: CR 452 (Craighead Co., N. of Punkin Ctr.)<br>Coordinates (lat, long): 35.72,-90.71</br>N. of birds: 20000</br>Date: 2014-11-16 13:05</p>")
+L
+  .marker([
+ 35.694,
+-90.748 
+])
+  .addTo( map )
+  .bindPopup("<p> Site name: Punkin Center Rd. (Poinsett Co.)<br>Coordinates (lat, long): 35.69,-90.75</br>N. of birds: 1000</br>Date: 2014-11-16 12:13</p>")
+    
+    
+    
+    
+    if (spec.circle2){
+      for (var c in spec.circle2){
+        var circle = L.circle(c.center, c.radius, c.opts)
+         .addTo(map);
+      }
+    }
+    
+    
+    
+    
+    
+   
+   
+   
+</script>
+    
+    <script></script>    
+  </body>
+</html>
