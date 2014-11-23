@@ -107,4 +107,5 @@ The GitHub repository for the application, containing the code, documentation an
 >* The eBird API provides a wealth of bird information. However, the ability to select and customize the information is very interesting. Imagine, for example, a hotel in a birding hotspot, that wishes to include in their webpage the latest observations in the surrounding area... there are many such possibilities for an application like this.
 
 
+Thank you.
 
